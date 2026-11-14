@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="John Khan" />
+  <meta name="description" content="Form Fatigue Fix turns two official Toronto-area forms into a required-versus-optional checklist and a one-page fill order." />
+  <link rel="icon" href="data:," />
+  <title>Form Fatigue Fix · A calmer fill order</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="banner">
+    <div class="banner-inner">
+      <h1>Form Fatigue Fix</h1>
+      <p>Open a public form, see which fields you must fill, and get a one-page order so you are not hunting through footnotes while the deadline sits in the back of your mind.</p>
+      <span class="pill">Built for IdeaLab Hacks</span>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <div class="grid side">
+      <section class="card" aria-labelledby="pick-title">
+        <h2 id="pick-title">Pick a form</h2>
+        <p class="meta">Two official forms are bundled, with every field taken from the published PDF. This page does not read a form for you and does not invent a field list.</p>
+        <div class="row">
+          <div>
+            <label for="form-pick">Official sample</label>
+            <select id="form-pick"></select>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="shot">Optional reference photo (stays on your device)</label>
+            <input id="shot" type="file" accept="image/*" />
+            <p class="hint">You can place a photo of your own copy beside the list. Nothing is uploaded, and the photo is not used to guess fields.</p>
+          </div>
+        </div>
+        <img id="preview" class="preview" alt="Your reference photo will appear here." hidden />
+        <div id="form-notes" class="note" hidden></div>
+      </section>
+      <section class="card" aria-labelledby="order-title">
+        <h2 id="order-title">Fill order</h2>
+        <p id="counts" class="meta" aria-live="polite"></p>
+        <ol id="order" class="fill"></ol>
+        <button id="copy-order" type="button" class="secondary">Copy the fill order</button>
+        <p id="copy-status" class="hint" aria-live="polite"></p>
+      </section>
+    </div>
+    <section class="card" aria-labelledby="all-title" style="margin-top:1rem;">
+      <h2 id="all-title">All fields, grouped</h2>
+      <div id="groups"></div>
+    </section>
+    <section class="sources">
+      <h2>Sources</h2>
+      <p>Field lists were copied from the official documents on 9 November 2026, America/Toronto. Both source links were checked again on 13 November 2026 and returned HTTP 200.</p>
+      <ul class="clean" id="source-list"></ul>
+    </section>
+  </main>
+  <footer class="wrap">
+    <p>Solo project by John Khan, Toronto, Ontario. This checklist is a reading aid. It does not file a request or a notice, and it is not legal advice.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

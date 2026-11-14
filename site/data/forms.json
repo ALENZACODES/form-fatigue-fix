@@ -1,0 +1,311 @@
+{
+  "retrieved": "2026-11-09",
+  "retrieved_zone": "America/Toronto",
+  "disclaimer": "Field lists are taken from the official forms and instruction pages cited below. This tool does not submit a request or a notice for you. Office-use boxes are listed so you can skip them.",
+  "forms": [
+    {
+      "id": "toronto-foi",
+      "title": "City of Toronto Freedom of Information Access Request",
+      "short": "Toronto FOI request",
+      "form_code": "07-0088 2023-01",
+      "source_name": "City of Toronto Freedom of Information Access Request form",
+      "source_url": "https://www.toronto.ca/wp-content/uploads/2024/08/976e-FOIRequestForm2023FINAL.pdf",
+      "guide_url": "https://www.toronto.ca/city-government/accountability-operations-customer-service/access-city-information-or-records/freedom-of-information/",
+      "source_checked": "PDF and guide page both returned HTTP 200 on 2026-11-09 and again on 2026-11-13, America/Toronto.",
+      "why": "A short city form that mixes clearly required items (signature, description, $5 fee) with optional ones (division, date range, extra phone).",
+      "notes": [
+        "The paper form marks Signature as required. The pre-send checklist also requires a detailed description of the records and the $5 application fee, payable to the City of Toronto.",
+        "City office or division is asked only if you know it. Start and end dates are asked only if applicable.",
+        "Use either First Name and Last Name, or Single Name if you have a registered single name. Do not fill the office-use boxes.",
+        "If you request your own personal information, the city will later need government-issued identification. The form says an Ontario Health Card is not accepted.",
+        "The city says it does not accept FOI requests by fax or email. Mail, in person, or the city's online system are the listed options. This page does not send anything."
+      ],
+      "fields": [
+        {
+          "id": "desc",
+          "name": "Description of information requested",
+          "section": "Request",
+          "required": "required",
+          "why": "The pre-send checklist tells you to provide a detailed description of the records.",
+          "tip": "Write what records you want, and be specific about addresses or file types if you know them."
+        },
+        {
+          "id": "division",
+          "name": "City office or division that has the information",
+          "section": "Request",
+          "required": "optional",
+          "why": "The form asks for this only if you know it.",
+          "tip": "Skip this if you are unsure. 311 can help you identify a division before you apply."
+        },
+        {
+          "id": "dates",
+          "name": "Start and end dates of the information (yyyy-mm-dd)",
+          "section": "Request",
+          "required": "optional",
+          "why": "The form asks for dates only if they apply.",
+          "tip": "Add a date range when the records cover a period, such as a specific year."
+        },
+        {
+          "id": "first",
+          "name": "First name",
+          "section": "Contact",
+          "required": "required_unless_single",
+          "why": "Contact information is part of the form. Use first and last name, or the single-name box if that applies.",
+          "tip": "Leave this blank only if you are using Single Name."
+        },
+        {
+          "id": "last",
+          "name": "Last name",
+          "section": "Contact",
+          "required": "required_unless_single",
+          "why": "Contact information is part of the form. Use first and last name, or the single-name box if that applies.",
+          "tip": "Leave this blank only if you are using Single Name."
+        },
+        {
+          "id": "single",
+          "name": "Single name",
+          "section": "Contact",
+          "required": "optional",
+          "why": "Only if you have a registered birth certificate or change of name certificate with a single name.",
+          "tip": "Check the box on the official form if you use this field."
+        },
+        {
+          "id": "street-no",
+          "name": "Street number",
+          "section": "Mailing address",
+          "required": "expected",
+          "why": "The form has a mailing address block but does not mark it required. The city needs an address or phone number to send you a reply.",
+          "tip": "Match the address you want the city to use for a reply."
+        },
+        {
+          "id": "street",
+          "name": "Street name",
+          "section": "Mailing address",
+          "required": "expected",
+          "why": "The form has a mailing address block but does not mark it required. The city needs an address or phone number to send you a reply.",
+          "tip": ""
+        },
+        {
+          "id": "unit",
+          "name": "Suite or unit number",
+          "section": "Mailing address",
+          "required": "optional",
+          "why": "Only if your address has one.",
+          "tip": ""
+        },
+        {
+          "id": "city",
+          "name": "City or town",
+          "section": "Mailing address",
+          "required": "expected",
+          "why": "The form has a mailing address block but does not mark it required. The city needs an address or phone number to send you a reply.",
+          "tip": ""
+        },
+        {
+          "id": "province",
+          "name": "Province",
+          "section": "Mailing address",
+          "required": "expected",
+          "why": "The form has a mailing address block but does not mark it required. The city needs an address or phone number to send you a reply.",
+          "tip": ""
+        },
+        {
+          "id": "postal",
+          "name": "Postal code",
+          "section": "Mailing address",
+          "required": "expected",
+          "why": "The form has a mailing address block but does not mark it required. The city needs an address or phone number to send you a reply.",
+          "tip": ""
+        },
+        {
+          "id": "phone",
+          "name": "Telephone number",
+          "section": "Contact",
+          "required": "expected",
+          "why": "The contact block has a telephone line. It is not marked required, but staff use it to reach you about the request.",
+          "tip": "Use a number you can answer during business hours."
+        },
+        {
+          "id": "alt-phone",
+          "name": "Alternate number",
+          "section": "Contact",
+          "required": "optional",
+          "why": "Listed beside the main telephone number and not required.",
+          "tip": ""
+        },
+        {
+          "id": "email",
+          "name": "Email",
+          "section": "Contact",
+          "required": "optional",
+          "why": "The form includes an email line but does not mark it required. The city also says it does not accept the request itself by email.",
+          "tip": "Add it if you are comfortable receiving follow-up that way."
+        },
+        {
+          "id": "signature",
+          "name": "Signature",
+          "section": "Sign and pay",
+          "required": "required",
+          "why": "The form labels Signature as required.",
+          "tip": "Sign the official form, not this checklist."
+        },
+        {
+          "id": "sign-date",
+          "name": "Date (yyyy-mm-dd)",
+          "section": "Sign and pay",
+          "required": "required",
+          "why": "The signature line includes a date in yyyy-mm-dd format.",
+          "tip": "Use the date you sign the official form."
+        },
+        {
+          "id": "fee",
+          "name": "$5 application fee payable to the City of Toronto",
+          "section": "Sign and pay",
+          "required": "required",
+          "why": "The pre-send checklist and the fee schedule say the $5 application fee is mandatory and not subject to waiver.",
+          "tip": "Cash, cheque, or money order on the paper form. The online system has its own payment step."
+        },
+        {
+          "id": "id-doc",
+          "name": "Government-issued identification (personal information requests)",
+          "section": "If it applies",
+          "required": "conditional",
+          "why": "Required later if you request your own personal information, or personal information with third-party consent.",
+          "tip": "Examples listed on the form include a driver's licence, Ontario photo card, citizenship card, or the first photo page of a passport. An Ontario Health Card is not accepted."
+        },
+        {
+          "id": "correction",
+          "name": "Desired correction and supporting documents",
+          "section": "If it applies",
+          "required": "conditional",
+          "why": "Only if you are asking the city to correct personal information.",
+          "tip": "Write the correction you want and attach proof."
+        },
+        {
+          "id": "office",
+          "name": "Date received, request number, and type of request",
+          "section": "Office use only",
+          "required": "skip",
+          "why": "These boxes are labelled For Office Use Only.",
+          "tip": "Leave them blank."
+        }
+      ]
+    },
+    {
+      "id": "ltb-n9",
+      "title": "Tenant's Notice to End the Tenancy (Form N9)",
+      "short": "LTB Form N9",
+      "form_code": "N9, v. 01/04/2022",
+      "source_name": "Landlord and Tenant Board Form N9 (PDF)",
+      "source_url": "https://tribunalsontario.ca/documents/ltb/Notices%20of%20Termination%20%26%20Instructions/N9.pdf",
+      "guide_url": "https://tribunalsontario.ca/ltb/",
+      "source_checked": "Official N9 PDF returned HTTP 200 on 2026-11-09 and again on 2026-11-13, America/Toronto.",
+      "why": "A three-page notice with a short list of fields you fill, plus a long instruction section you should read but not copy onto the form.",
+      "notes": [
+        "Use the official N9 from Tribunals Ontario. This checklist only ranks the fields on that form.",
+        "The form asks you to include all tenant names, the rental unit address, and a termination date. The instructions explain how to pick a valid date.",
+        "Page 3 has the signature block, including a choice of Tenant or Representative.",
+        "Delivery Method and File Number are marked OFFICE USE ONLY.",
+        "The instructions describe other notice periods in special cases (for example daily or weekly tenancies, or when a landlord has given an N12 or N13). Read those notes on the official form before you sign."
+      ],
+      "fields": [
+        {
+          "id": "landlord",
+          "name": "To: Landlord's name",
+          "section": "Who and where",
+          "required": "required",
+          "why": "The first line of the notice identifies the landlord.",
+          "tip": "Use the landlord name from your rental agreement."
+        },
+        {
+          "id": "tenants",
+          "name": "From: Tenant's name (include all tenant names)",
+          "section": "Who and where",
+          "required": "required",
+          "why": "The form says to include all tenant names.",
+          "tip": "List every tenant named on the agreement."
+        },
+        {
+          "id": "address",
+          "name": "Address of the rental unit",
+          "section": "Who and where",
+          "required": "required",
+          "why": "The notice has to identify the rental unit.",
+          "tip": "Use the full unit address, including unit number."
+        },
+        {
+          "id": "term-date",
+          "name": "Last day of the tenancy / termination date (dd/mm/yyyy)",
+          "section": "The date",
+          "required": "required",
+          "why": "The form requires a termination date. The instructions say it must usually be at least 60 days after you give the notice and must be the last day of a rental period, or the last day of a fixed term.",
+          "tip": "Check the official instructions, or a date helper that uses those rules, before you write this date."
+        },
+        {
+          "id": "role",
+          "name": "Tenant or Representative (check one)",
+          "section": "Sign",
+          "required": "required",
+          "why": "The signature block asks you to mark Tenant or Representative.",
+          "tip": "Check Tenant if you are signing for yourself."
+        },
+        {
+          "id": "sig-first",
+          "name": "First name",
+          "section": "Sign",
+          "required": "required",
+          "why": "The signature block asks for first name and last name.",
+          "tip": ""
+        },
+        {
+          "id": "sig-last",
+          "name": "Last name",
+          "section": "Sign",
+          "required": "required",
+          "why": "The signature block asks for first name and last name.",
+          "tip": ""
+        },
+        {
+          "id": "sig-phone",
+          "name": "Phone number",
+          "section": "Sign",
+          "required": "expected",
+          "why": "The signature block includes a phone number line. The form does not mark it required, but it lets your landlord reach you.",
+          "tip": ""
+        },
+        {
+          "id": "signature",
+          "name": "Signature",
+          "section": "Sign",
+          "required": "required",
+          "why": "The form has a signature line on page 3.",
+          "tip": "Sign the official N9. A typed email is not a substitute for the Board form."
+        },
+        {
+          "id": "sig-date",
+          "name": "Date (dd/mm/yyyy)",
+          "section": "Sign",
+          "required": "required",
+          "why": "The signature block includes a date.",
+          "tip": "Use the date you actually give the notice, because the notice period is counted from then."
+        },
+        {
+          "id": "file",
+          "name": "File number",
+          "section": "Office use only",
+          "required": "skip",
+          "why": "Marked OFFICE USE ONLY.",
+          "tip": "Leave this blank."
+        },
+        {
+          "id": "delivery",
+          "name": "Delivery method",
+          "section": "Office use only",
+          "required": "skip",
+          "why": "Marked OFFICE USE ONLY.",
+          "tip": "Leave this blank. Keep your own record of how you gave the notice."
+        }
+      ]
+    }
+  ]
+}
