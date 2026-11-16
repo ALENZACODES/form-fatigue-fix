@@ -32,6 +32,26 @@ Open http://localhost:8080/.
 node tests/test_forms.mjs
 ```
 
+## Project structure
+
+```text
+form-fatigue-fix/
+├── .github/
+│   └── workflows/      # CI workflows (1 file)
+├── site/               # The app
+│   ├── data/           # Form data (1 file)
+│   ├── app.js          # Interface logic
+│   ├── index.html      # Page markup
+│   └── styles.css      # Styles
+├── tests/              # Automated tests
+│   └── test_forms.mjs
+├── .gitignore
+├── DEVPOST.md          # Submission write-up
+├── IDEA.md             # Original idea note
+├── LICENSE             # Licence
+└── README.md           # This file
+```
+
 ## Data sources
 
 - City of Toronto FOI form: https://www.toronto.ca/wp-content/uploads/2024/08/976e-FOIRequestForm2023FINAL.pdf
